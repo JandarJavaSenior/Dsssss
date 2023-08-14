@@ -1,44 +1,48 @@
 public class Student {
-        private String name;
-        private  int nomer;
-        private int id;
+    private String fio;
+    private int phoneNomber;
+    private String address;
+    private int bank;
 
-    public Student(String name, int nomer, int id) {
-        this.name = name;
-        this.nomer = nomer;
-        this.id = id;
+    public Student(String fio, int phoneNomber, String address, int bank) {
+        this.fio = fio;
+        this.phoneNomber = phoneNomber;
+        this.address = address;
+        this.bank = bank;
     }
 
-    public String getName() {
-        return name;
+    public Student(){
+
+    }
+    public String getFio() {
+        return fio;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 
-    public int getNomer() {
-        return nomer;
+    public int getPhoneNomber() {
+        return phoneNomber;
     }
 
-    public void setNomer(int nomer) {
-        this.nomer = nomer;
+    public void setPhoneNomber(int phoneNomber) {
+        this.phoneNomber = phoneNomber;
     }
 
-    public int getId() {
-        return id;
+    public String getAddress() {
+        return address;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", nomer=" + nomer +
-                ", id=" + id +
-                '}';
+    public int getBank() {
+        return bank;
+    }
+
+    public void setBank(int bank) {
+        this.bank = bank;
     }
 }
